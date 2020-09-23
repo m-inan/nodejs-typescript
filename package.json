@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-typescript",
+  "version": "1.0.0",
+  "main": "src/main.ts",
+  "description": "Nodejs Typescript Biolerplate",
+  "repository": "https://github.com/m-inan/nodejs-typescript",
+  "author": "minan <muhammet@tilpark.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_PATH=dist node dist/main.js",
+    "watch": "nodemon --watch",
+    "lint": "eslint . --ext .ts",
+    "build": "rm -rf dist; tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.9.0"
+  }
+}
