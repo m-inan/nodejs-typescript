@@ -1,0 +1,7 @@
+type Message {
+  text: String!
+}
+
+type Query {
+  message: Message!
+}
